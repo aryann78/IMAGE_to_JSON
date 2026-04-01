@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Narrative-to-Visual Generation System
 
-# Run and deploy your AI Studio app
+A performance-focused application that converts narrative input into structured JSON prompts and high-quality visual outputs.
 
-This contains everything you need to run your app locally.
+Overview
 
-View your app in AI Studio: https://ai.studio/apps/b780ff09-58f8-4d97-9b40-5784ca59a3dc
+This project transforms abstract user intent into well-defined structured data and consistent outputs.
+The focus is on reliability, speed, and clean data generation.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Features
+Narrative input processing into structured JSON
+Optimized field selection for faster performance
+Consistent and high-quality output generation
+Stable execution with reduced runtime errors
+Clean and reusable data pipeline
+Architecture
+User Input (Narrative)
+        ↓
+Processing Layer
+        ↓
+Structured JSON Generation
+        ↓
+Output Rendering
+Improvements
+Replaced unsupported models with stable alternatives
+Improved field selection performance
+Fixed 404 model errors
+Ensured compatibility with current API versions
+Performed linting and validation
+Results
+Faster response time
+Improved output consistency
+No model-related runtime errors
+Better structured data generation
+Limitations
+Terminal editors (vi, nano, emacs) are not supported in web environments
+Use the built-in editor for file changes
