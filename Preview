@@ -1,0 +1,57 @@
+IMAGE TO JSON EXTRACTOR
+
+Overview:
+This project converts images (invoices, receipts, ID cards, forms) into structured JSON data.
+It does not just extract text — it understands and organizes information into meaningful fields.
+
+Problem:
+Manual data entry from images is slow, error-prone, and not scalable.
+Basic OCR tools only extract raw text, not structured data.
+
+Solution:
+A pipeline that combines OCR and intelligent parsing to convert image data into usable JSON format.
+
+Pipeline:
+
+1. Input Image
+2. OCR Processing (Text Extraction)
+3. Text Parsing (Field Detection)
+4. JSON Structuring
+5. Validation & Error Handling
+
+Tech Stack:
+
+* Python
+* OCR Engine (Tesseract / Google Vision API)
+* NLP / Parsing (Regex / LLM-based)
+* FastAPI (for API deployment)
+
+Features:
+
+* Supports multiple document types (invoice, receipt, ID)
+* Converts unstructured text into structured JSON
+* Handles noisy or imperfect OCR output
+* Extendable for real-time applications
+
+Example Output:
+{
+"name": "Aryan Jani",
+"date": "2026-03-12",
+"amount": 5000
+}
+
+Limitations:
+
+* Accuracy depends on image quality
+* Complex layouts may require advanced parsing
+* Handwritten text may reduce performance
+
+Future Improvements:
+
+* LLM-based field extraction for higher accuracy
+* Confidence scoring for each field
+* Real-time processing with streaming input
+* Frontend interface for user interaction
+
+Conclusion:
+This project demonstrates how to move beyond basic OCR and build a system that understands and structures visual data for real-world applications.
